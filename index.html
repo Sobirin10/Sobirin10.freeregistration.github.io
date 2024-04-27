@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Gratis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="registration-form">
+        <h1>Free Registration</h1>
+        
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required>
+
+        <label for="kota">Kota:</label>
+        <input type="text" id="kota" name="kota" required>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" id="pekerjaan" name="pekerjaan" required>
+
+        <fieldset>
+            <legend>Jenis Kelamin:</legend>
+            <label>
+                <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki
+            </label>
+            <label>
+                <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+            </label>
+        </fieldset>
+
+        <label for="hobi">Hobi (pilih atau tambahkan):</label>
+        <select id="hobi" name="hobi">
+            <option value="reading">Reading</option>
+            <option value="sport">Sport</option>
+            <option value="singing">Singing</option>
+            <option value="traveling">Traveling</option>
+            <option value="">Lainnya</option>
+        </select>
+
+        <input type="text" id="hobi_lain" name="hobi_lain" placeholder="Tuliskan hobi lainnya">
+
+        <div class="buttons">
+            <button type="submit">Kirim</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
